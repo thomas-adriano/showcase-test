@@ -2,18 +2,26 @@ html {
 	font-family: 'Open Sans', sans-serif !important;
 }
 
+body {
+	background-color: #FBFBFB;
+}
+
 .text--centralized {
 	text-align: center;
 }
 
 .frame {
+	border-radius: 2px;
 	display: block;
 	padding: .5rem;
+	background-color: #FFFFFF;
+	height: 100%;
+	border: 1px solid #EEEEEE;
 }
 
 .frame__element {
 	display: block;
-	padding.3rem;
+	padding: .3rem;
 }
 
 .frame__element--inline {
@@ -24,4 +32,23 @@ html {
 .frame--narrow {
 	@extend .frame;
 	margin: 0 15%;
+}
+
+.btn {
+	border-radius: 2px;
+	border: none;
+	background-color: #FFFFFF;
+	font-size: 1rem;
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.btn--md {
+	height: 3rem;
+}
+
+.btn--success {
+	@extend .btn;
+	background-color: #56ED56;
+	color: #FFFFFF;
 }

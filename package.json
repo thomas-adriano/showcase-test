@@ -7,7 +7,8 @@
     "buildTest": "webpack --config ./test/webpack.config.js --progress --colors",
     "liveTest": "webpack-dev-server --config ./test/webpack.config.js --progress --colors --port 80",
     "start": "webpack --progress --colors && node ./dist/showcase.js",
-    "test": "karma start --single-run"
+    "test": "karma start --single-run",
+    "watch": "webpack --progress --colors --watch"
   },
   "keywords": [
     "showcase"

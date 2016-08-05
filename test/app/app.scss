@@ -6,32 +6,12 @@ body {
 	background-color: #FBFBFB;
 }
 
+ul {
+	list-style-type: none !important;
+}
+
 .text--centralized {
 	text-align: center;
-}
-
-.frame {
-	border-radius: 2px;
-	display: block;
-	padding: .5rem;
-	background-color: #FFFFFF;
-	height: 100%;
-	border: 1px solid #EEEEEE;
-}
-
-.frame__element {
-	display: block;
-	padding: .3rem;
-}
-
-.frame__element--inline {
-	@extend .frame__element;
-	display: inline-block;
-}
-
-.frame--narrow {
-	@extend .frame;
-	margin: 0 15%;
 }
 
 .btn {
@@ -41,14 +21,26 @@ body {
 	font-size: 1rem;
 	text-align: center;
 	padding: 0 1rem;
+	margin: .3rem;
 }
 
 .btn--md {
+	font-size: 1.3rem;
 	height: 3rem;
 }
 
 .btn--success {
 	@extend .btn;
-	background-color: #56ED56;
+	background-color: #00D100;
+	transition: background-color .1s ease;
 	color: #FFFFFF;
+	outline: none;
+	&:hover {
+		background-color: darken(#00D100, 5%);
+		transition: background-color .3s ease;
+	}
+	&:active {
+		background-color: #00D100;
+		transition: background-color .05s ease;
+	}
 }

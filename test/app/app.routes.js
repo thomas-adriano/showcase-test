@@ -17,7 +17,10 @@ function appRoutes($stateProvider, $urlRouterProvider) {
         .state('cart', {
             url: "/cart",
             template: cartView,
-            controller: 'cartCtrl as cart'
+            controller: 'cartCtrl as cart',
+            params: {
+                productCode: null
+            }
         })
         .state('product', {
             url: "/product/:code",

@@ -1,7 +1,7 @@
 export default CartCtrl;
 
-CartCtrl.$inject = [];
+CartCtrl.$inject = ['$stateParams'];
 
-function CartCtrl() {
-	this.test = 'CART TEST HERE';
+function CartCtrl($stateParams) {
+	this.test = $stateParams.productCode;
 }

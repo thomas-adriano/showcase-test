@@ -1,0 +1,47 @@
+@import "../utilities";
+
+.product-panel {
+	border-radius: 2px;
+	display: block;
+	padding: 1rem;
+	background-color: #FFFFFF;
+	height: 100%;
+	border: 1px solid #EEEEEE;
+	margin: 0;
+	transition: margin .3s ease;
+}
+
+.product-panel__element {
+	display: block;
+	padding: .3rem;
+	@extend .responsive-element;
+}
+
+.product-panel__description {
+	@extend .product-panel__element;
+	display: block;
+	margin: 2rem 0;
+}
+
+.product-panel__photo {
+	@extend .product-panel__element;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.product-panel__buttons {
+	@extend .product-panel__element;
+	float: right;
+	margin: 0 1rem 0 0;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+@media all and (min-width: 500px) {
+	.product-panel {
+		margin: 0 15%;
+		transition: margin .3s ease;
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "predef": [ "window", "$", "document", "console" ],
+  "esversion": 6,
+  "undef": true,
+  "unused": true
+}

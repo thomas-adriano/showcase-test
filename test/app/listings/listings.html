@@ -1,0 +1,15 @@
+<section class="text--centralized">
+    <div class="text--centralized" ng-show="listings.error">
+        Sem conectividade com o backend, utilizando dados estáticos.
+    </div>
+    <div class="tile" ng-repeat="i in listings.products" ui-sref="product({
+                                code: i.data.codigo})">
+        <div class="tile__selection-layer">
+        </div>
+        <img alt="" class="tile__item" ng-src="{{i.photo}}">
+        </img>
+        <p class="text--centralized">
+            {{i.data.descricao}}
+        </p>
+    </div>
+</section>

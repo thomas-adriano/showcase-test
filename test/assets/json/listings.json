@@ -1,0 +1,482 @@
+[
+  {
+    "codigo": "S-100-100836",
+    "descricao": "450-565 | Multi-User Server",
+    "complemento": "",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-VENDA",
+      "nome": "Licenca de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-100837",
+    "descricao": "450-566 | Multi-User Client",
+    "complemento": "",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-VENDA",
+      "nome": "Licenca de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-100807",
+    "descricao": "49.270.038-0 XXX - PGR TCP/IP",
+    "complemento": "CESSÃO DIREITO USO",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-VENDA",
+      "nome": "Licenca de Uso(10)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-100807",
+    "descricao": "49.270.038-0 XXX - PGR TCP/IP",
+    "complemento": "49.270.038-0 XXX - PGR TCP/IP",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-VENDA",
+      "nome": "Licenca de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-100829",
+    "descricao": "49.270.094-0 XHX Conex online - Servidor Virtual",
+    "complemento": "Conex Oracle Servidor Virtual Até 100 Equipamentos",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-VENDA",
+      "nome": "Licenca de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-100817",
+    "descricao": "64ADV-64RUP 64 Access Readers",
+    "complemento": "Access Readers upgrade for all ADV systems (max of 256 readers)",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-VENDA",
+      "nome": "Licenca de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-090803",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-SAAS",
+      "nome": "Software como Serviço(09)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-4013",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-VENDA",
+      "nome": "Licenca de Uso(10)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-4014",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-MANUT",
+      "nome": "Atualização Direito de Uso(12)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-4015",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-UPGRAD",
+      "nome": "Licenca de Uso - Upgrade(11)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-4016",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-LUT",
+      "nome": "Licenca de Uso Temporaria(13)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-090803",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-SAAS",
+      "nome": "Software como Serviço"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-4013",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-VENDA",
+      "nome": "Licenca de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-4014",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-MANUT",
+      "nome": "Atualização Direito de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-4015",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-UPGRAD",
+      "nome": "Licenca de Uso(Upgrade)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-100-4016",
+    "descricao": "A.MAP Standard",
+    "complemento": "A.MAP Standard",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-LUT",
+      "nome": "Licenca de Uso Temporaria"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-090804",
+    "descricao": "A.Map Enterprise",
+    "complemento": "A.Map Enterprise",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-SAAS",
+      "nome": "Software como Serviço(09)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-100801",
+    "descricao": "A.Map Enterprise",
+    "complemento": "A.Map Enterprise",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-VENDA",
+      "nome": "Licenca de Uso(10)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-110801",
+    "descricao": "A.Map Enterprise",
+    "complemento": "A.Map Enterprise",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-UPGRAD",
+      "nome": "Licenca de Uso - Upgrade(11)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  },
+  {
+    "codigo": "S-1-120801",
+    "descricao": "A.Map Enterprise",
+    "complemento": "A.Map Enterprise",
+    "empresa": {
+      "codigo": "1",
+      "nome": "Senior Sistemas S/A"
+    },
+    "familia": {
+      "codigo": "1-MANUT",
+      "nome": "Atualização Direito de Uso(12)"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  }
+]

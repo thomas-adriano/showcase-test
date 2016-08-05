@@ -1,0 +1,27 @@
+html {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.text--centralized {
+	text-align: center;
+}
+
+.frame {
+	display: block;
+	padding: .5rem;
+}
+
+.frame__element {
+	display: block;
+	padding.3rem;
+}
+
+.frame__element--inline {
+	@extend .frame__element;
+	display: inline-block;
+}
+
+.frame--narrow {
+	@extend .frame;
+	margin: 0 15%;
+}

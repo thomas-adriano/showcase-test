@@ -1,0 +1,24 @@
+{
+    "codigo": "S-100-100836",
+    "descricao": "450-565 | Multi-User Server",
+    "complemento": "",
+    "empresa": {
+      "codigo": "100",
+      "nome": "HEAD Comercio de Equipamentos de Segurança Ltda"
+    },
+    "familia": {
+      "codigo": "100-VENDA",
+      "nome": "Licenca de Uso"
+    },
+    "vendidoSeparadamente": "",
+    "unidadeDeMedida": "UN",
+    "kit": "",
+    "marca": {
+      "descricao": "",
+      "codigo": ""
+    },
+    "colecao": {
+      "descricao": "",
+      "codigo": ""
+    }
+  }

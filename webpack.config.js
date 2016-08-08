@@ -9,6 +9,9 @@ var dev = process.env.npm_lifecycle_event === 'build' || process.env.npm_lifecyc
 var commonsPlugins = [
     new webpack.ProvidePlugin({
         $: "jquery"
+    }),
+    new webpack.DefinePlugin({
+        EVENT_SERVER_URL: '"http://localhost:7070/events.json"',
     })
 ];
 
@@ -36,7 +39,7 @@ module.exports = {
     context: __dirname,
     entry: "./app/showcase.js",
     output: {
-        path: './dist',
+        path: path.resolve(__dirname, 'dist'),
         filename: "showcase.js"
     },
     module: {

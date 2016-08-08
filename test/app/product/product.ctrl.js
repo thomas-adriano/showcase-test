@@ -14,12 +14,14 @@ function ProductCtrl($stateParams, productSv, $window) {
     vm.error = false;
     vm.productCode = $stateParams.code;
 
-    $window.showcaseMeta = {
-        page: 'product',
-        product: {
-            
-        }
-    }
+    $window.sendEvent({
+        "event": "view",
+        "entityType": "user",
+        "entityId": "u1",
+        "targetEntityType": "item",
+        "targetEntityId": $stateParams.productCode
+    });
+
 
     productSv.fetchProduct(vm.productCode, (data) => {
         console.log(JSON.stringify(data));

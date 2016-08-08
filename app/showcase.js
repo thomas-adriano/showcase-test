@@ -8,30 +8,22 @@ const eventUrl = EVENT_SERVER_URL + '?accessKey=' + apiKey;
 window.recomendaMeta = {
     page: {
 
+    },
+    user: {
+
+    },
+    item: {
+
     }
 };
 
 
-function sendEvent(args) {
-    $.ajax({
+window.sendEvent = function(args) {
+    return $.ajax({
         type: "POST",
-        body: args,
         contentType: "application/json",
         url: eventUrl,
-        complete: function(response) {
-            console.log('event sent');
-        },
-        error: function(error) {
-            console.log('something went wrong');
-        }
+        data: JSON.stringify(args),
+        dataType: "json"
     });
-}
-
-sendEvent({
-    event: "view",
-    entityType: "user",
-    entityTypeId: "1705",
-    targetEntityType: "item",
-    targetEntityId: "S-1-22313",
-    eventTime: "2015-02-17T02:11:21.934Z"
-});
+};

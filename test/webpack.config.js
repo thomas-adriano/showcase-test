@@ -14,7 +14,7 @@ var plugins = [
     new CleanWebpackPlugin([distFolder]), //deleta a pasta distFolder antes de dar build (problema: no watch mode deleta sรณ na inicializacao, nao em cada regeracao dos arquivos :()
     new webpack.DefinePlugin({
         BACKEND_URL: '"http://pcbnu008603:8084/"',
-        EVENT_SERVER_URL: '"http://localhost:7070/events.json"',
+        EVENT_SERVER_URL: '"http://pcbnu008603:7071/events.json"',
     })
 ];
 

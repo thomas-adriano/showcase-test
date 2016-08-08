@@ -11,7 +11,7 @@ var commonsPlugins = [
         $: "jquery"
     }),
     new webpack.DefinePlugin({
-        EVENT_SERVER_URL: '"http://localhost:7070/events.json"',
+        EVENT_SERVER_URL: '"http://pcbnu008603:7071/events.json"',
     })
 ];
 

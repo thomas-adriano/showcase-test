@@ -27,13 +27,11 @@
 
 	&:hover {
 		opacity: .1;
-		/* property name | duration | timing function | delay */
 		transition: opacity .3s ease;
 	}
 
 	&:active {
 		opacity: .05;
-		/* property name | duration | timing function | delay */
 		transition: opacity .1s ease;
 	}
 }

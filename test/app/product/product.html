@@ -11,8 +11,7 @@
         <input class="btn--success btn--md" name="Comprar" type="button" ui-sref="buy({
                                 productCode: product.data.codigo})" value="Comprar">
         </input>
-        <input class="btn--warning btn--md" name="Carrinho" type="button" ui-sref="cart({
-                                productCode: product.data.codigo})" value="Carrinho">
+        <input class="btn--warning btn--md" name="Carrinho" type="button" ng-click="product.sendToCart(product.data.codigo)" value="Carrinho">
         </input>
     </div>
     <p class="product-panel__description">

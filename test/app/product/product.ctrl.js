@@ -4,15 +4,16 @@ import 'product/product.scss';
 
 export default ProductCtrl;
 
-ProductCtrl.$inject = ['$stateParams', 'productSv', '$window'];
+ProductCtrl.$inject = ['$stateParams', 'productSv', '$window', 'toastr'];
 
-function ProductCtrl($stateParams, productSv, $window) {
+function ProductCtrl($stateParams, productSv, $window, toastr) {
 
     let vm = this;
     vm.data = {};
     vm.photo = noImg;
     vm.error = false;
     vm.productCode = $stateParams.code;
+    vm.sendToCart = sendToCart;
 
     $window.sendEvent({
         "event": "view",
@@ -30,4 +31,8 @@ function ProductCtrl($stateParams, productSv, $window) {
         vm.error = true;
         vm.data = product;
     });
+
+    function sendToCart(prodId) {
+        toastr.success(prodId+" adicionado ao carrinho");
+    }
 }

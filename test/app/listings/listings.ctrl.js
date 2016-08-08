@@ -3,9 +3,9 @@ import noImg from 'img/no_img.png';
 
 export default ListingsCtrl;
 
-ListingsCtrl.$inject = ['listingsSv'];
+ListingsCtrl.$inject = ['listingsSv', '$window'];
 
-function ListingsCtrl(listingsSv) {
+function ListingsCtrl(listingsSv, $window) {
     let vm = this;
     vm.products = [];
     vm.error = false;
@@ -17,6 +17,7 @@ function ListingsCtrl(listingsSv) {
                 photo: noImg, //TODO: se um dia houver fotos dos produtos elas devem ser buscadas..
             };
         });
+        sendEvents();
     }, (data) => {
         vm.error = true;
         vm.products = listings.map(elm => {
@@ -26,4 +27,18 @@ function ListingsCtrl(listingsSv) {
             };
         });
     });
+
+    //TODO: send all items in a single call
+    var sendEvents = function() {
+        vm.products.forEach(function(product) {
+            $window.sendEvent({
+                "event": "view",
+                "entityType": "user",
+                "entityId": "u1",
+                "targetEntityType": "item",
+                "targetEntityId": product.data.codigo
+            });
+        });
+    }
+
 }

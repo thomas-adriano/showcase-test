@@ -5,15 +5,6 @@ html {
 
 body {
     background-color: #EEEEEE;
-    padding: 1rem;
-    transition: padding .3s ease;
-}
-
-@media all and (max-width: $breakpoint-max-extra-small) {
-    body {
-        padding: 0;
-        transition: padding .3s ease;
-    }
 }
 
 ul {

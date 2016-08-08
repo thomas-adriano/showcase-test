@@ -12,6 +12,7 @@ var commonsPlugins = [
     }),
     new webpack.DefinePlugin({
         EVENT_SERVER_URL: '"http://pcbnu008603:7071/events.json"',
+        PREDICTION_SERVER_URL: '"http://pcbnu008603:8001/queries.json"'
     })
 ];
 

@@ -1,13 +1,13 @@
 @import "../core/utilities";
 @import "../core/variables";
 .product-panel {
+    margin: 1rem 0 0 0;
     display: block;
     padding: 1rem;
     height: 100%;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
     border-radius: 2px;
-    margin: 0;
     transition: margin .3s ease;
     @extend .text--centralized;
 }
@@ -37,28 +37,32 @@
 
 @media all and (min-width: $breakpoint-min-extra-small) {
     .product-panel {
-        margin: 0 10%;
+        margin-left: 10%;
+        margin-right: 10%;
         transition: margin .3s ease;
     }
 }
 
 @media all and (min-width: $breakpoint-min-medium) {
     .product-panel {
-        margin: 0 15%;
+        margin-left: 15%;
+        margin-right: 15%;
         transition: margin .3s ease;
     }
 }
 
 @media all and (min-width: $breakpoint-min-large) {
     .product-panel {
-        margin: 0 20%;
+        margin-left: 20%;
+        margin-right: 20%;
         transition: margin .3s ease;
     }
 }
 
 @media all and (min-width: $breakpoint-min-extra-large) {
     .product-panel {
-        margin: 0 25%;
+        margin-left: 25%;
+        margin-right: 25%;
         transition: margin .3s ease;
     }
 }

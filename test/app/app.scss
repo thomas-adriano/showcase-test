@@ -1,46 +1,82 @@
+@import 'core/variables';
 html {
-	font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 body {
-	background-color: #FBFBFB;
+    background-color: #EEEEEE;
+    padding: 1rem;
+    transition: padding .3s ease;
+}
+
+@media all and (max-width: $breakpoint-max-extra-small) {
+    body {
+        padding: 0;
+        transition: padding .3s ease;
+    }
 }
 
 ul {
-	list-style-type: none !important;
-}
-
-.text--centralized {
-	text-align: center;
+    list-style-type: none !important;
 }
 
 .btn {
-	border-radius: 2px;
-	border: none;
-	background-color: #FFFFFF;
-	font-size: 1rem;
-	text-align: center;
-	padding: 0 1rem;
-	margin: .3rem;
+    border-radius: 2px;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin: .3rem;
+    outline: none;
+    cursor: pointer;
 }
 
 .btn--md {
-	font-size: 1.3rem;
-	height: 3rem;
+    font-size: 1.3rem;
+    height: 3rem;
+}
+
+.btn--default {
+    @extend .btn;
+    background-color: #EEEEEE;
+    transition: background-color .1s ease;
+    color: #000;
+    &:hover {
+        background-color: darken(#EEEEEE, 10%);
+        transition: background-color .3s ease;
+    }
+    &:active {
+        background-color: #EEEEEE;
+        transition: background-color .05s ease;
+    }
 }
 
 .btn--success {
-	@extend .btn;
-	background-color: #00D100;
-	transition: background-color .1s ease;
-	color: #FFFFFF;
-	outline: none;
-	&:hover {
-		background-color: darken(#00D100, 5%);
-		transition: background-color .3s ease;
-	}
-	&:active {
-		background-color: #00D100;
-		transition: background-color .05s ease;
-	}
+    @extend .btn;
+    background-color: #00D100;
+    transition: background-color .1s ease;
+    color: #FFFFFF;
+    &:hover {
+        background-color: darken(#00D100, 5%);
+        transition: background-color .3s ease;
+    }
+    &:active {
+        background-color: #00D100;
+        transition: background-color .05s ease;
+    }
+}
+
+.btn--warning {
+    @extend .btn;
+    background-color: #FFFD87;
+    transition: background-color .1s ease;
+    &:hover {
+        background-color: darken(#FFFD87, 10%);
+        transition: background-color .3s ease;
+    }
+    &:active {
+        background-color: #FFFD87;
+        transition: background-color .05s ease;
+    }
 }

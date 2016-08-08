@@ -1,5 +1,6 @@
 import listingsView from 'listings/listings.html';
 import cartView from 'cart/cart.html';
+import buyView from 'buy/buy.html';
 import productView from 'product/product.html';
 
 export default appRoutes;
@@ -14,6 +15,11 @@ function appRoutes($stateProvider, $urlRouterProvider) {
             template: listingsView,
             controller: 'listingsCtrl as listings'
         })
+        .state('product', {
+            url: "/product/:code",
+            template: productView,
+            controller: 'productCtrl as product'
+        })
         .state('cart', {
             url: "/cart",
             template: cartView,
@@ -22,9 +28,12 @@ function appRoutes($stateProvider, $urlRouterProvider) {
                 productCode: null
             }
         })
-        .state('product', {
-            url: "/product/:code",
-            template: productView,
-            controller: 'productCtrl as product'
+        .state('buy', {
+            url: "/buy",
+            template: buyView,
+            controller: 'buyCtrl as buy',
+            params: {
+                productCode: null
+            }
         });
 }

@@ -1,21 +1,21 @@
-@import "../utilities";
-@import "../variables";
-
+@import "../core/utilities";
+@import "../core/variables";
 .product-panel {
-    border-radius: 2px;
     display: block;
     padding: 1rem;
-    background-color: #FFFFFF;
     height: 100%;
+    background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
+    border-radius: 2px;
     margin: 0;
     transition: margin .3s ease;
+    @extend .text--centralized;
 }
 
 .product-panel__element {
+    @extend .responsive-element;
     display: block;
     padding: .3rem;
-    @extend .responsive-element;
 }
 
 .product-panel__description {
@@ -30,13 +30,19 @@
     margin: 0;
 }
 
-.product-panel__button {
-    float: right;
-    margin: 0 1rem 0 0;
-    display: inline-block;
+.product-panel__button-group {
+    display: block;
+    text-align: left;
 }
 
 @media all and (min-width: $breakpoint-min-extra-small) {
+    .product-panel {
+        margin: 0 10%;
+        transition: margin .3s ease;
+    }
+}
+
+@media all and (min-width: $breakpoint-min-medium) {
     .product-panel {
         margin: 0 15%;
         transition: margin .3s ease;
@@ -45,9 +51,14 @@
 
 @media all and (min-width: $breakpoint-min-large) {
     .product-panel {
-        margin: 0 25%;
+        margin: 0 20%;
         transition: margin .3s ease;
     }
 }
 
-
+@media all and (min-width: $breakpoint-min-extra-large) {
+    .product-panel {
+        margin: 0 25%;
+        transition: margin .3s ease;
+    }
+}

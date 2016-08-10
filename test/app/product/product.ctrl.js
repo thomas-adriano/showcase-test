@@ -4,15 +4,17 @@ import 'product/product.scss';
 
 export default ProductCtrl;
 
-ProductCtrl.$inject = ['$stateParams', 'productSv', '$window', 'toastr', 'cartSv'];
+ProductCtrl.$inject = ['$stateParams', 'productSv', '$window', 'toastr', 'cartSv', 'sessionSv'];
 
-function ProductCtrl($stateParams, productSv, $window, toastr, cartSv) {
+function ProductCtrl($stateParams, productSv, $window, toastr, cartSv, sessionSv) {
 
     $window.showcaseMeta = {
         page: 'product',
         product: {
             id: $stateParams.code,
-            userId: sessionSv.getSessionId()
+        },
+        user: {
+            id: sessionSv.getSessionId(),
         }
     }
 

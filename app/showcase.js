@@ -5,28 +5,25 @@ const script = scripts[scripts.length - 1];
 const apiKey = script.getAttribute('data-api-key');
 const eventUrl = EVENT_SERVER_URL + '?accessKey=' + apiKey;
 
+if (showcaseMeta.page === 'buy') {
+    sendEvent({
+        "event": "buy",
+        "entityType": "user",
+        "entityId": showcaseMeta.user.id,
+        "targetEntityType": "item",
+        "targetEntityId": showcaseMeta.product.id
+    })
+} else if (showcaseMeta.page === 'product') {
+    sendEvent({
+        "event": "view",
+        "entityType": "user",
+        "entityId": showcaseMeta.user.id,
+        "targetEntityType": "item",
+        "targetEntityId": showcaseMeta.product.id
+    })
+}
 
-window.recomendaMeta = {
-    page: {
-
-    },
-    user: {
-
-    },
-    item: {
-
-    }
-};
-
-// $window.sendEvent({
-//     "event": "view",
-//     "entityType": "user",
-//     "entityId": "u1",
-//     "targetEntityType": "item",
-//     "targetEntityId": $stateParams.productCode
-// });
-
-window.sendEvent = function(args) {
+function sendEvent(args) {
     return $.ajax({
         type: "POST",
         contentType: "application/json",
@@ -36,7 +33,7 @@ window.sendEvent = function(args) {
     });
 };
 
-window.getRecommendations = function(args) {
+function getRecommendations(args) {
     return $.ajax({
         type: "POST",
         contentType: "application/json",

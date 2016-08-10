@@ -8,9 +8,11 @@ function BuyCtrl($stateParams, $window, sessionSv) {
 
     $window.showcaseMeta = {
         page: 'buy',
-        buy: {
-            productId: $stateParams.productCode,
-            userId: sessionSv.getSessionId()
+        product: {
+            id: $stateParams.productCode,
+        },
+        user: {
+            id: sessionSv.getSessionId(),
         }
     }
 

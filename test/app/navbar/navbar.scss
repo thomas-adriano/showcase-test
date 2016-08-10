@@ -32,6 +32,8 @@ $navbar-height: 3rem;
         transition: background-color .2s ease;
         height: $navbar-height*1.15;
         transition: height .2s ease;
+        color: darken($icons-color, 10%);
+        transition: color .2s ease;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }

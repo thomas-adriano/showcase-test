@@ -1,1 +1,25 @@
-<p>Produto {{cart.test}} comprado.</p>
+<section>
+    <table class="cart">
+        <thead class="cart__header">
+            <tr>
+                <td>
+                    Descricao
+                </td>
+                <td>
+                    Quantidade
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cart__item" ng-repeat="product in cart.products" ui-sref="product({
+                                code: product.codigo})">
+                <td>
+                    {{product.descricao}}
+                </td>
+                <td>
+                    {{product.quantity}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

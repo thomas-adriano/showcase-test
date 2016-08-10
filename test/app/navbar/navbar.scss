@@ -1,5 +1,8 @@
+@import '../core/utilities';
+$icons-color: lighten(#000, 33%);
+$navbar-height: 3rem;
 .navbar {
-    height: 3rem;
+    height: $navbar-height;
     background-color: #B6BFD5;
     margin: 0;
     padding: 0;
@@ -10,29 +13,31 @@
 }
 
 .navbar__button {
-    height: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
     outline: none;
     background-color: #B6BFD5;
     transition: background-color .3s ease;
     cursor: pointer;
     border: none;
-    text-align: center;
-    vertical-align: center;
-    font-size: 1.3rem;
-    position: relative;
-    >* {
-        position: absolute;
-    }
+    color: $icons-color;
+    height: $navbar-height - $navbar-height*.15;
+    width: auto;
+    padding: $navbar-height*.15 1rem 0 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     &:hover {
         background-color: lighten(#B6BFD5, 10%);
-        transition: background-color .3s ease;
+        transition: background-color .2s ease;
+        height: $navbar-height*1.15;
+        transition: height .2s ease;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
 
-.navbar__button--left {
-    @extend .navbar__button;
-    float: right;
-    i {
-        float: right !important;
-    }
+a.navbar__button {
+    text-decoration: none;
+    vertical-align: middle;
 }

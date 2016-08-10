@@ -18,6 +18,13 @@ window.recomendaMeta = {
     }
 };
 
+// $window.sendEvent({
+//     "event": "view",
+//     "entityType": "user",
+//     "entityId": "u1",
+//     "targetEntityType": "item",
+//     "targetEntityId": $stateParams.productCode
+// });
 
 window.sendEvent = function(args) {
     return $.ajax({
@@ -35,8 +42,8 @@ window.getRecommendations = function(args) {
         contentType: "application/json",
         url: PREDICTION_SERVER_URL,
         success: function(response) {
-          console.log('success');
-          loadDataInsideDiv(response);
+            console.log('success');
+            loadDataInsideDiv(response);
         },
         error: function(error) {
             console.log('não foi possível realizar a chamada');
@@ -46,6 +53,6 @@ window.getRecommendations = function(args) {
     });
 }
 
-function loadDataInsideDiv(data){
-  console.log(data);
+function loadDataInsideDiv(data) {
+    console.log(data);
 }

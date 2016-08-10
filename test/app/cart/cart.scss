@@ -1,0 +1,29 @@
+@import '../core/variables.scss';
+@import '../core/utilities.scss';
+.cart {
+    @extend .center-block-element;
+    border-radius: 2px;
+    padding: 0;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    border-spacing: 0;
+    td {
+    	text-align: center;
+        padding: .66rem;
+        line-height: 2rem;
+        border-top: 2px solid $background-color;
+    }
+    .cart__header {
+        background-color: darken(#FFF, 3%);
+        font-weight: bold;
+    }
+    .cart__item {
+        background-color: #FFF;
+        cursor: pointer;
+        &:hover {
+            background-color: darken(#FFF, 15%);
+            transition: background-color ease .3s;
+            border-color: darken(#FFF, 15%);
+        }
+    }
+}

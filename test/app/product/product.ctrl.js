@@ -4,9 +4,17 @@ import 'product/product.scss';
 
 export default ProductCtrl;
 
-ProductCtrl.$inject = ['$stateParams', 'productSv', '$window', 'toastr'];
+ProductCtrl.$inject = ['$stateParams', 'productSv', '$window', 'toastr', 'cartSv'];
 
-function ProductCtrl($stateParams, productSv, $window, toastr) {
+function ProductCtrl($stateParams, productSv, $window, toastr, cartSv) {
+
+    $window.showcaseMeta = {
+        page: 'product',
+        product: {
+            id: $stateParams.code,
+            userId: sessionSv.getSessionId()
+        }
+    }
 
     let vm = this;
     vm.data = {};
@@ -15,24 +23,15 @@ function ProductCtrl($stateParams, productSv, $window, toastr) {
     vm.productCode = $stateParams.code;
     vm.sendToCart = sendToCart;
 
-    $window.sendEvent({
-        "event": "view",
-        "entityType": "user",
-        "entityId": "u1",
-        "targetEntityType": "item",
-        "targetEntityId": $stateParams.productCode
-    });
-
-
     productSv.fetchProduct(vm.productCode, (data) => {
-        console.log(JSON.stringify(data));
         vm.data = data;
     }, (data) => {
         vm.error = true;
         vm.data = product;
     });
 
-    function sendToCart(prodId) {
-        toastr.success(prodId+" adicionado ao carrinho");
+    function sendToCart(prod) {
+        cartSv.addToCart(prod.codigo);
+        toastr.success(prod.codigo + " adicionado ao carrinho");
     }
 }

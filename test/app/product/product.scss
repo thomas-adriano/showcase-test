@@ -23,9 +23,14 @@
     margin: 2rem 0;
 }
 
+//Utilizar um "photo frame" é a unica forma de garantir um max width preservando a 
+//responsividade da classe "product-panel__photo".
+.product-panel__photo-frame {
+    display: inline-block;
+    max-width: 500px;
+}
 .product-panel__photo {
     @extend .product-panel__element;
-    display: inline-block;
     padding: 0;
     margin: 0;
 }

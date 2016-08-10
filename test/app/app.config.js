@@ -1,7 +1,9 @@
 export default appCfg;
 
-appCfg.$inject = [];
+appCfg.$inject = ['toastr'];
 
-function appCfg() {
-
+function appCfg(toastr) {
+    toastr.options.closeButton = true;
+    toastr.options.timeOut = 2000;
+    toastr.options.extendedTimeOut = 4000;
 }

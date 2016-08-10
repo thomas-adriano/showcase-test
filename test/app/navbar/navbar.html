@@ -1,7 +1,12 @@
-<nav class="navbar">
-    <input class="navbar__button--left" name="Carrinho" type="button" value="">
+<nav class="navbar" ng-controller="navbarCtrl as navbar">
+    <a class="navar__element--right navbar__button" ui-sref="cart">
         <i aria-hidden="true" class="fa fa-shopping-cart fa-2x">
         </i>
-    </input>
-    
+        {{navbar.cartItemsQuantity}} Carrinho
+    </a>
+    <a class="navar__element--right navbar__button" ui-sref="listings">
+        <i aria-hidden="true" class="fa fa-th fa-2x">
+        </i>
+        Listagem
+    </a>
 </nav>

@@ -5,22 +5,23 @@ const script = scripts[scripts.length - 1];
 const apiKey = script.getAttribute('data-api-key');
 const eventUrl = EVENT_SERVER_URL + '?accessKey=' + apiKey;
 
-if (showcaseMeta.page === 'buy') {
-    sendEvent({
-        "event": "buy",
+init();
+
+function init() {
+    let event = {
         "entityType": "user",
         "entityId": showcaseMeta.user.id,
         "targetEntityType": "item",
         "targetEntityId": showcaseMeta.product.id
-    })
-} else if (showcaseMeta.page === 'product') {
-    sendEvent({
-        "event": "view",
-        "entityType": "user",
-        "entityId": showcaseMeta.user.id,
-        "targetEntityType": "item",
-        "targetEntityId": showcaseMeta.product.id
-    })
+    };
+
+    if (showcaseMeta.page === 'buy') {
+        event.event = "buy";
+    } else if (showcaseMeta.page === 'product') {
+        event.event = "view";
+    }
+
+    sendEvent(event);
 }
 
 function sendEvent(args) {

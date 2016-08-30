@@ -1,11 +1,8 @@
-export default appCfg;
+import toastr from 'toastr';
 
-appCfg.$inject = ['toastr'];
-
-function appCfg(toastr) {
-    toastr.options.closeButton = true;
-    toastr.options.timeOut = 2000;
-    toastr.options.extendedTimeOut = 4000;
-    toastr.options.positionClass = 'toast-bottom-right';
-    toastr.options.newestOnTop = true;
+toastr.options = {
+    closeButton: true,
+    timeOut: 2000,
+    positionClass: 'toast-bottom-right',
+    newestOnTop: true,
 }

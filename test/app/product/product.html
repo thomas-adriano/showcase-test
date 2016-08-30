@@ -1,19 +1,18 @@
 <section class="product-panel">
-    <div class="text--centralized" ng-show="product.error">
+    <div class="text--centralized" v-if="error">
         Sem conectividade com o backend, utilizando dados estáticos.
     </div>
     <h1>
-        {{product.data.descricao}}
+        {{data.descricao}}
     </h1>
     <div class="product-panel__photo-frame">
-        <img alt="" class="product-panel__photo" ng-src="{{product.photo}}">
+        <img :src="photo" alt="" class="product-panel__photo">
         </img>
     </div>
     <div class="product-panel__button-group">
-        <input class="btn--success btn--md" name="Comprar" type="button" ui-sref="buy({
-                                productCode: product.data.codigo})" value="Comprar">
+        <input class="btn--success btn--md" name="Comprar" type="button" v-link="{name:'buy', params: {productId: data.codigo}}" value="Comprar">
         </input>
-        <input class="btn--warning btn--md" name="Carrinho" ng-click="product.sendToCart(product.data)" type="button" value="Carrinho">
+        <input @click="sendToCart(data)" class="btn--warning btn--md" name="Carrinho" type="button" value="Carrinho">
         </input>
     </div>
     <p class="product-panel__description">

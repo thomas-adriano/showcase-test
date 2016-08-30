@@ -52,5 +52,5 @@ function getRecommendations(args) {
 }
 
 function loadDataInsideDiv(data) {
-    console.log(data);
+    injectRecomendations(data);
 }

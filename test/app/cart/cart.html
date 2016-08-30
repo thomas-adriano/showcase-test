@@ -11,8 +11,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="cart__item" ng-repeat="product in cart.products" ui-sref="product({
-                                code: product.codigo})">
+            <tr class="cart__item" ng-repeat="product in products" v-link="{name: 'product', params: {productId: product.codigo}}">
                 <td>
                     {{product.descricao}}
                 </td>

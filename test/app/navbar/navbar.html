@@ -1,10 +1,10 @@
-<nav class="navbar" ng-controller="navbarCtrl as navbar">
-    <a class="navar__element--right navbar__button" ui-sref="cart">
+<nav class="navbar">
+    <a class="navar__element--right navbar__button" v-link="{name: 'cart'}">
         <i aria-hidden="true" class="fa fa-shopping-cart fa-2x">
         </i>
-        {{navbar.cartItemsQuantity}} Carrinho
+        ({{productsQuantity || 0}}) Carrinho
     </a>
-    <a class="navar__element--right navbar__button" ui-sref="listings">
+    <a class="navar__element--right navbar__button" v-link="{name: 'listings'}">
         <i aria-hidden="true" class="fa fa-th fa-2x">
         </i>
         Listagem

@@ -57,7 +57,7 @@ var loaders = [{
 
 module.exports = {
     context: __dirname,
-    entry: "./app/app.module.js",
+    entry: "./app/app.js",
     output: {
         path: distFolder,
         filename: "showcase_test.[hash].js"

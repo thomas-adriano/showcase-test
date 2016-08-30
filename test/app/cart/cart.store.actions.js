@@ -1,0 +1,1 @@
+export const addProduct = ({dispatch}, prodId) => dispatch('ADD_PRODUCT');
